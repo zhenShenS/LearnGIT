@@ -1,0 +1,246 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:sap-com:document:sap:rfc:functions:GetEmpInfoBS" targetNamespace="urn:sap-com:document:sap:rfc:functions:GetEmpInfoBS" elementFormDefault="qualified">
+   <xsd:element name="ZF_HR_GETEMPINFO4OA">
+<xsd:complexType>
+         <xsd:all>
+            <xsd:element name="IN_ICNUM" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="30"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="IN_NAME" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="30"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="IN_PERNR" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="IN_PLANS" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="8"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+</xsd:all>
+      </xsd:complexType>
+   </xsd:element>
+<xsd:element name="ZF_HR_GETEMPINFO4OA_RESPONSE">
+<xsd:complexType>
+         <xsd:all>
+            <xsd:element name="OUT_BIRTHDAY" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_BM" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="100"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_BYRQ" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_CONTRACT_BEGIN" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_CONTRACT_END" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_CXRZ" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_ENTRYDATE" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_GRZWMC" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="20"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_GW" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="30"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_GWBM" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_GWCJ" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="20"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_GWXC" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_GWXL" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="20"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_HF" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="4"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_ICNUM" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="18"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_JG" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="100"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_JTZZ" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="100"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_MOBILE" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="20"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_SCHOOL" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="80"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_SEX" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="4"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_SUOH" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="20"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_XD" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_XJ" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="10"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_XL" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="20"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_XL2" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="20"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_YGZ" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="20"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_YGZZ" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="20"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_ZWCJ" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="20"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+<xsd:element name="OUT_ZY" minOccurs="0">
+               <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                     <xsd:maxLength value="40"/>
+                  </xsd:restriction>
+               </xsd:simpleType>
+</xsd:element>
+</xsd:all>
+      </xsd:complexType>
+   </xsd:element>
+</xsd:schema>

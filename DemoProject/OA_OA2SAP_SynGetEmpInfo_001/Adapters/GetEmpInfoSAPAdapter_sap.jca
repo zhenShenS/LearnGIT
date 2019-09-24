@@ -1,0 +1,14 @@
+<adapter-config name="GetEmpInfoBS" adapter="sap" wsdlLocation="../WSDLs/GetEmpInfoBS.wsdl" xmlns="http://platform.integration.oracle/blocks/adapter/fw/metadata">
+  
+  <connection-factory UIConnectionName="WZ" location="eis/SAP/WZ"/>
+  <endpoint-interaction portType="GetEmpInfoBS_PT" operation="ZF_HR_GETEMPINFO4OA">
+    <interaction-spec className="oracle.tip.adapter.sap.outbound.SAPInteractionSpecImpl">
+      <property name="Interaction" value="stateless"/>
+      <property name="ExceptionFilter" value="off"/>
+      <property name="SchemaValidation" value="off"/>
+      <property name="RFC" value="ZF_HR_GETEMPINFO4OA"/>
+      <property name="Type" value="RFC"/>
+    </interaction-spec>
+  </endpoint-interaction>
+
+</adapter-config>

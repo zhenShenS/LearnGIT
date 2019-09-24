@@ -1,0 +1,15 @@
+<wsdl:definitions targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/sap/WZOSBApp/DemoProject/GetEmpInfoBS" name="GetEmpInfoBS-concrete" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <wsdl:import location="GetEmpInfoBS.wsdl" namespace="http://xmlns.oracle.com/pcbpel/adapter/sap/WZOSBApp/DemoProject/GetEmpInfoBS"/>
+    <wsdl:binding name="GetEmpInfoBS_PT-binding" type="get:GetEmpInfoBS_PT" xmlns:get="http://xmlns.oracle.com/pcbpel/adapter/sap/WZOSBApp/DemoProject/GetEmpInfoBS">
+        <soap:binding style="document" transport="http://www.bea.com/wli/sb/transports/jca"/>
+        <wsdl:operation name="ZF_HR_GETEMPINFO4OA">
+            <soap:operation soapAction="ZF_HR_GETEMPINFO4OA"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+</wsdl:definitions>

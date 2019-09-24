@@ -1,0 +1,23 @@
+<application xmlns:soa="http://www.oracle.com/soa/rest" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rfc="urn:sap-com:document:sap:rfc:functions:GetEmpInfoBS" xmlns="http://wadl.dev.java.net/2009/02">
+   <doc title="ByRestPS">RestService</doc>
+   <grammars>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/sap/WZOSBApp/DemoProject/GetEmpInfoBS" xmlns:jca="http://xmlns.oracle.com/pcbpel/wsdl/jca/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:impl="http://xmlns.oracle.com/pcbpel/adapter/sap/WZOSBApp/DemoProject/GetEmpInfoBS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+        <import namespace="urn:sap-com:document:sap:rfc:functions:GetEmpInfoBS" schemaLocation="../Schemas/GetEmpInfoBS.xsd"/>
+      </schema>
+   </grammars>
+   <resources>
+      <resource path="/">
+         <method name="GET" soa:wsdlOperation="ZF_HR_GETEMPINFO4OA">
+            <request soa:paramElement="pns:ZF_HR_GETEMPINFO4OA" xmlns:pns="urn:sap-com:document:sap:rfc:functions:GetEmpInfoBS">
+               <param name="IN_ICNUM" style="query" soa:expression="$msg.parameters/rfc:IN_ICNUM" type="xsd:string"/>
+               <param name="IN_NAME" style="query" soa:expression="$msg.parameters/rfc:IN_NAME" type="xsd:string"/>
+               <param name="IN_PERNR" style="query" soa:expression="$msg.parameters/rfc:IN_PERNR" type="xsd:string"/>
+               <param name="IN_PLANS" style="query" soa:expression="$msg.parameters/rfc:IN_PLANS" type="xsd:string"/>
+            </request>
+            <response status="200">
+               <representation mediaType="application/json" element="cns:ZF_HR_GETEMPINFO4OA_RESPONSE" xmlns:cns="urn:sap-com:document:sap:rfc:functions:GetEmpInfoBS"/>
+            </response>
+         </method>
+      </resource>
+   </resources>
+</application>

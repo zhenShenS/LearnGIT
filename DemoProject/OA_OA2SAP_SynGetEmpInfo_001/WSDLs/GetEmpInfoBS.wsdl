@@ -1,0 +1,24 @@
+<wsdl:definitions name="GetEmpInfoBS" targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/sap/WZOSBApp/DemoProject/GetEmpInfoBS" xmlns:tns="http://xmlns.oracle.com/pcbpel/adapter/sap/WZOSBApp/DemoProject/GetEmpInfoBS" xmlns:jca="http://xmlns.oracle.com/pcbpel/wsdl/jca/" xmlns:plt="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:rfc="urn:sap-com:document:sap:rfc:functions:GetEmpInfoBS" xmlns:impl="http://xmlns.oracle.com/pcbpel/adapter/sap/WZOSBApp/DemoProject/GetEmpInfoBS" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <plt:partnerLinkType name="GetEmpInfoBS_plt">
+    <plt:role name="GetEmpInfoBS_role">
+      <plt:portType name="impl:GetEmpInfoBS_PT"/>
+    </plt:role>
+  </plt:partnerLinkType>
+    <wsdl:types>
+      <schema xmlns="http://www.w3.org/2001/XMLSchema">
+        <import namespace="urn:sap-com:document:sap:rfc:functions:GetEmpInfoBS" schemaLocation="../Schemas/GetEmpInfoBS.xsd"/>
+      </schema>
+    </wsdl:types>
+    <wsdl:message name="ZF_HR_GETEMPINFO4OA_MSG">
+        <wsdl:part name="parameters" element="rfc:ZF_HR_GETEMPINFO4OA"/>
+    </wsdl:message>
+    <wsdl:message name="ZF_HR_GETEMPINFO4OA_RESPONSE_MSG">
+        <wsdl:part name="parameters" element="rfc:ZF_HR_GETEMPINFO4OA_RESPONSE"/>
+    </wsdl:message>
+    <wsdl:portType name="GetEmpInfoBS_PT">
+        <wsdl:operation name="ZF_HR_GETEMPINFO4OA">
+            <wsdl:input message="tns:ZF_HR_GETEMPINFO4OA_MSG"/>
+            <wsdl:output message="tns:ZF_HR_GETEMPINFO4OA_RESPONSE_MSG"/>
+        </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>
